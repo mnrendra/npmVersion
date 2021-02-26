@@ -6,7 +6,11 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -r lib && npx babel src --out-dir lib"
+    "build": "rm -r lib && npx babel src --out-dir lib",
+    "version": "npm version patch",
+    "add": "git branch && git status && git add . && git branch && git status",
+    "push": "git branch && git status && git fetch origin main && git pull origin main && git push origin main",
+    "publish": "npm publish --access=public"
   },
   "repository": {
     "type": "git",
