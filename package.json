@@ -1,13 +1,12 @@
 {
   "name": "@mnrendra/npm-versioning",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "mnrendra's npm-versioning",
   "private": false,
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -r lib && npx babel src --out-dir lib",
-    "version": "npm version patch",
+    "build": "rm -r lib && npx babel src --out-dir lib && npm version patch --no-git-tag-version",
     "add": "git branch && git status && git add . && git branch && git status",
     "push": "git branch && git status && git fetch origin main && git pull origin main && git push origin main",
     "publish": "npm publish --access=public"
