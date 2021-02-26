@@ -1,0 +1,35 @@
+{
+  "name": "@mnrendra/npm-versioning",
+  "version": "0.1.0",
+  "description": "mnrendra's npm-versioning",
+  "private": false,
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -r lib && npx babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mnrendra/npmVersion.git"
+  },
+  "keywords": [
+    "mnrendra",
+    "npm-versioning"
+  ],
+  "author": "Muhammad Rendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnrendra/npmVersion/issues"
+  },
+  "homepage": "https://github.com/mnrendra/npmVersion#readme",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/preset-react": "^7.12.13"
+  }
+}
